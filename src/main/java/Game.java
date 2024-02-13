@@ -96,6 +96,19 @@ public class Game{
       }
     }
 
+    boolean cats = true;
+    for(int y = 0; y <= last; y++){
+      for(int x = 0; x <= height; x++){
+        if(STATE[y][x] == 0){
+          cats = false;
+        }
+      }
+    }
+
+    if(cats){
+      return new Player("CATSGAME");
+    }
+    
     return new Player("NONE");
   }
 }

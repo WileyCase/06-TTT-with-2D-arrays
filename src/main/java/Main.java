@@ -64,7 +64,12 @@ class Main {
       myGame.doTurn(i);
       i++;
       Player winner = myGame.checkWin();
-      if(!winner.getName().equals("NONE")){
+      if(winner.getName().equals("CATSGAME")){
+        playing = false;
+        System.out.println(0);
+        System.out.println("Cat's Game!");
+      }
+      else if(!winner.getName().equals("NONE")){
         playing = false;
         System.out.println();
         System.out.println(winner.getName() + " wins!");
