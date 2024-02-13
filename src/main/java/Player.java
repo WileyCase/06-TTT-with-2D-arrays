@@ -1,10 +1,26 @@
+import java.util.Scanner;
+
 public class Player{
-    // Properties
+  // Properties
+  private String name;
+  private Scanner s = new Scanner(System.in);
 
-    // Constructors
-    public Player(){
-        
-    }
+  // Constructors
+  public Player(String name){
+    this.name = name;
+  }
 
-    // Methods
+  // Methods
+  public int[] doTurn(){
+    int[] cords = new int[2];
+    System.out.println(this.name + " please enter your y coordinate");
+    cords[0] = s.nextInt();
+    System.out.println(this.name + " please enter your x coordinate");
+    cords[1] = s.nextInt();
+    return cords;
+  }
+
+  public String getName(){
+    return this.name;
+  }
 }
