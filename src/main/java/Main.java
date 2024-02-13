@@ -25,6 +25,8 @@ For more in the future and more awesomer...
 3) You can have a 3rd dimension to the game
 4) You can make a new class for a game session as well as a single game
 5) You can make a new class for a turn, or a piece, or a screen painter
+
+// Wiley Case
 */
 
 
